@@ -1,0 +1,23 @@
+#!/bin/zsh
+# tmux-right-info — shows git info in repos, docker info outside
+# called from tmux status-right with pane path as $1
+dir="${1:-$PWD}"
+cd "$dir" 2>/dev/null || exit
+
+if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  branch=$(git branch --show-current 2>/dev/null)
+  status=""
+  # check for changes
+  if ! git diff --quiet 2>/dev/null; then status="${status}*"; fi
+  if ! git diff --cached --quiet 2>/dev/null; then status="${status}+"; fi
+  untracked=$(git ls-files --others --exclude-standard 2>/dev/null | wc -l)
+  if [ "$untracked" -gt 0 ]; then status="${status}?"; fi
+  if [ -n "$status" ]; then
+    printf " $branch [$status]"
+  else
+    printf " $branch"
+  fi
+else
+  running=$(docker ps -q 2>/dev/null | wc -l)
+  printf " $running"
+fi

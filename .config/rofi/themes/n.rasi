@@ -1,0 +1,13 @@
+//@theme "n"
+
+
+/* Window background */
+window {
+    background-color: #0a0a0a;
+    border-color: #0a0a0a;   
+}
+
+element { text-color: #ffffff; }
+prompt { text-color: #ffffff; }
+entry { text-color: #ffffff; }
+

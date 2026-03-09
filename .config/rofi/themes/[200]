@@ -1,0 +1,191 @@
+/*
+// Carbonfox Rofi 3.x Theme — black background + pink text 
+//@theme "carbonfox-carbonfox"
+
+* {
+    background-color: #0a0a0a;
+    foreground-color: #ff79c6;  // pink text for normal items 
+    border-color: #0a0a0a;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 6px;
+    font: "Iosevka Nerd Font 12";
+}
+
+// Window background 
+window {
+    background-color: #0a0a0a;
+    border-color: #0a0a0a;
+}
+
+// Input bar 
+inputbar {
+    background-color: #0a0a0a;
+    border-color: #222222;
+}
+
+entry {
+    background-color: #0a0a0a;
+    foreground-color: #ff79c6;
+    padding: 4px 8px;
+}
+
+// List elements 
+listview {
+    lines: 10;
+    fixed-height: 0;
+}
+
+element {
+    background-color: #0a0a0a;
+    foreground-color: #ff79c6;  // pink text for all unselected items 
+    padding: 4px 8px;
+}
+
+element-text {
+    background-color: inherit;
+    foreground-color: inherit;
+}
+
+element normal {
+    background-color: #111111;
+    foreground-color: #ff79c6;  // pink text for non-selected items 
+}
+
+element normal alternate {
+    background-color: #121212;
+    foreground-color: #ff79c6;  // pink text for alternate rows 
+}
+
+// Selected / highlighted items 
+element selected {
+    background-color: #ff79c6;  // pink background 
+    foreground-color: #0a0a0a;  // black text 
+}
+
+// Active items (cursor hover or focus) 
+element active {
+    background-color: #1c1c1c;
+    foreground-color: #ff79c6;
+}
+
+// Urgent items 
+element urgent {
+    background-color: #0a0a0a;
+    foreground-color: #ff79c6;
+}
+
+// Scrollbar 
+scrollbar {
+    width: 5px;
+    handle-width: 8px;
+    handle-color: #ff79c6;
+    background-color: #111111;
+}
+
+// Separators 
+separator {
+    background-color: #0a0a0a;
+}
+
+// Textboxes 
+textbox {
+    background-color: #0a0a0a;
+    foreground-color: #ff79c6;
+}
+*/
+// Carbonfox Rofi 3.x Theme — black background + pink text 
+//@theme "carbonfox-carbonfox"
+
+* {
+    background-color: #0a0a0a;
+    foreground-color: #ffffff;
+    border-color: #0a0a0a;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 6px;
+    font: "Iosevka Nerd Font 12";
+}
+
+/* Window background */
+window {
+    background-color: #0a0a0a;
+    border-color: #0a0a0a;
+}
+
+/* Input bar */
+inputbar {
+    background-color: #0a0a0a;
+    border-color: #222222;
+}
+
+entry {
+    background-color: #0a0a0a;
+    foreground-color: #ffffff;
+    padding: 4px 8px;
+}
+
+/* List elements */
+listview {
+    lines: 10;
+    fixed-height: 0;
+}
+
+element {
+    background-color: #0a0a0a;
+    foreground-color: #ffffff;
+    padding: 4px 8px;
+}
+
+element-text {
+    background-color: inherit;
+    foreground-color: inherit;
+}
+
+element normal {
+    background-color: #111111;
+    foreground-color: #ffffff;
+}
+
+element normal alternate {
+    background-color: #121212;
+    foreground-color: #ffffff;
+}
+
+/* Selected / highlighted items */
+element selected {
+    background-color: #ff79c6;
+    foreground-color: #0a0a0a;
+}
+
+/* Active items (cursor hover or focus) */
+element active {
+    background-color: #1c1c1c;
+    foreground-color: #ffffff;
+}
+
+/* Urgent items */
+element urgent {
+    background-color: #0a0a0a;
+    foreground-color: #ffffff;
+}
+
+/* Scrollbar */
+scrollbar {
+    width: 5px;
+    handle-width: 8px;
+    handle-color: #ff79c6;
+    background-color: #111111;
+}
+
+/* Separators */
+separator {
+    background-color: #0a0a0a;
+}
+
+/* Textboxes */
+textbox {
+    background-color: #0a0a0a;
+    foreground-color: #ffffff;
+}
+

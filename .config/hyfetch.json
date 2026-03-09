@@ -1,0 +1,19 @@
+{
+    "preset": "autism",
+    "mode": "rgb",
+    "auto_detect_light_dark": true,
+    "light_dark": "dark",
+    "lightness": 0.79,
+    "color_align": {
+        "mode": "custom",
+        "custom_colors": {
+            "1": 4,
+            "2": 1
+        }
+    },
+    "backend": "neofetch",
+    "args": null,
+    "distro": null,
+    "pride_month_disable": false,
+    "custom_ascii_path": null
+}

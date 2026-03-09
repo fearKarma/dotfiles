@@ -1,0 +1,74 @@
+# =============================================================================
+# starship.toml — minimal prompt
+# git + memory + time live in tmux bar, prompt stays lean
+# =============================================================================
+
+format = """
+$directory\
+$cmd_duration\
+$python\
+$status\
+$character"""
+
+# -- directory -----------------------------------------------------------------
+
+[directory]
+style = "#ee4f84"
+truncation_length = 8
+truncation_symbol = '…/'
+truncate_to_repo = true
+home_symbol = '~'
+
+# -- character (the ❯ prompt symbol) ------------------------------------------
+
+[character]
+success_symbol = "[❯](#42be65)"
+error_symbol = "[❯](#ee5396)"
+vimcmd_symbol = "[❮](#ffab91)"
+
+# -- cmd duration --------------------------------------------------------------
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "#ffab91"
+min_time = 2000
+
+# -- python virtualenv (only shows when inside a venv) ------------------------
+
+[python]
+format = "[$virtualenv]($style) "
+style = "#525252"
+
+# -- status (exit code on error) -----------------------------------------------
+
+[status]
+style = ''
+symbol = '🔴 '
+success_symbol = ''
+format = '[$common_meaning$signal_name$maybe_int]($style) '
+map_symbol = true
+disabled = false
+
+# -- disabled modules (now handled by tmux bar) --------------------------------
+
+[time]
+disabled = true
+
+[git_branch]
+disabled = true
+
+[git_status]
+disabled = true
+
+[git_state]
+disabled = true
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = ' '
+style = '#3ddbd9'
+format = '$symbol[${ram_pct}]($style) '
+
+[username]
+disabled = true

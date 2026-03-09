@@ -1,0 +1,13 @@
+#!/bin/sh
+vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ 2>/dev/null | awk '{print $2}')
+muted=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ 2>/dev/null | grep -c MUTED)
+pct=$(awk "BEGIN {printf \"%d\", $vol * 100}")
+if [ "$muted" -gt 0 ]; then
+  printf "󰝟 mute"
+elif [ "$pct" -ge 70 ]; then
+  printf "󰕾 %d%%" "$pct"
+elif [ "$pct" -ge 30 ]; then
+  printf "󰖀 %d%%" "$pct"
+else
+  printf "󰕿 %d%%" "$pct"
+fi
