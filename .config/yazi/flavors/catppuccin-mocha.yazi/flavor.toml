@@ -1,0 +1,89 @@
+[app]
+overall = { bg = "#0d0d0d" }
+
+[mgr]
+cwd = { fg = "#60cfe8" }
+
+find_keyword  = { fg = "#f1ff52", italic = true }
+find_position = { fg = "#ff69b4", bg = "reset", italic = true }
+
+marker_copied   = { fg = "#60cfe8", bg = "#60cfe8" }
+marker_cut      = { fg = "#ee4f84", bg = "#ee4f84" }
+marker_marked   = { fg = "#f1ff52", bg = "#f1ff52" }
+marker_selected = { fg = "#ff69b4", bg = "#ff69b4" }
+
+count_copied   = { fg = "#0d0d0d", bg = "#60cfe8" }
+count_cut      = { fg = "#0d0d0d", bg = "#ee4f84" }
+count_selected = { fg = "#0d0d0d", bg = "#ff69b4" }
+
+border_symbol = "│"
+border_style  = { fg = "#1c1c1c" }
+
+[tabs]
+active   = { fg = "#0d0d0d", bg = "#ff69b4", bold = true }
+inactive = { fg = "#ff69b4", bg = "#1c1c1c" }
+
+[mode]
+normal_main = { fg = "#0d0d0d", bg = "#ff69b4", bold = true }
+normal_alt  = { fg = "#ff69b4", bg = "#1c1c1c" }
+
+select_main = { fg = "#0d0d0d", bg = "#60cfe8", bold = true }
+select_alt  = { fg = "#60cfe8", bg = "#1c1c1c" }
+
+unset_main  = { fg = "#0d0d0d", bg = "#f1ff52", bold = true }
+unset_alt   = { fg = "#f1ff52", bg = "#1c1c1c" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#1c1c1c", bg = "#1c1c1c" }
+
+perm_type  = { fg = "#ff69b4" }
+perm_read  = { fg = "#f1ff52" }
+perm_write = { fg = "#ee4f84" }
+perm_exec  = { fg = "#60cfe8" }
+perm_sep   = { fg = "#1c1c1c" }
+
+[input]
+border   = { fg = "#ff69b4" }
+title    = { fg = "#ff69b4" }
+value    = { fg = "#ffffff" }
+selected = { fg = "#0d0d0d", bg = "#ff69b4" }
+
+[select]
+border   = { fg = "#ff69b4" }
+active   = { fg = "#ff69b4" }
+inactive = { fg = "#808080" }
+
+[tasks]
+border  = { fg = "#ff69b4" }
+title   = { fg = "#ff69b4" }
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "#0d0d0d" }
+cand            = { fg = "#60cfe8" }
+rest            = { fg = "#808080" }
+desc            = { fg = "#ff69b4" }
+separator       = "  "
+separator_style = { fg = "#1c1c1c" }
+
+[notify]
+title_info  = { fg = "#60cfe8" }
+title_warn  = { fg = "#f1ff52" }
+title_error = { fg = "#ee4f84" }
+
+[filetype]
+rules = [
+  { mime = "image/*",              fg = "#60cfe8" },
+  { mime = "video/*",              fg = "#ff69b4" },
+  { mime = "audio/*",              fg = "#f1ff52" },
+  { mime = "application/zip",      fg = "#ee4f84" },
+  { mime = "application/x-tar",    fg = "#ee4f84" },
+  { mime = "application/x-bzip2",  fg = "#ee4f84" },
+  { mime = "application/x-7z*",    fg = "#ee4f84" },
+  { mime = "inode/directory",      fg = "#ff69b4" },
+  { name = "*.toml",               fg = "#60cfe8" },
+  { name = "*.yaml",               fg = "#60cfe8" },
+  { name = "*.json",               fg = "#60cfe8" },
+]
