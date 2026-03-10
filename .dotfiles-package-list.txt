@@ -1,0 +1,59 @@
+# Base
+base base-devel linux linux-firmware grub efibootmgr
+
+# Shell
+zsh zsh-autosuggestions zsh-syntax-highlighting starship
+
+# Terminal / Multiplexer
+kitty tmux
+
+# Window Manager / Desktop
+i3-wm picom rofi-git xorg-server xorg-xinit xorg-xrandr xorg-xev feh xss-lock i3lock-color xidlehook
+
+# Browser
+brave-bin (AUR)
+
+# Editor
+neovim
+
+# File Manager
+yazi ffmpegthumbnailer imagemagick poppler
+
+# Media
+mpv yt-dlp ncspot
+
+# Audio
+pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol
+
+# Fonts
+ttf-iosevkaterm-nerd ttc-iosevka
+
+# CLI Tools
+git lazygit lazydocker bat eza fzf ripgrep fd zoxide btop hyperfine hyfetch shotgun xclip
+
+# Network
+networkmanager openssh
+
+# Drive support
+ntfs-3g
+
+# Torrent
+qbittorrent
+
+# Chat
+discord
+
+# Dev
+go clang valgrind nodejs npm
+
+# Bluetooth
+bluez bluez-utils
+
+# Portals / XDG
+xdg-utils xdg-desktop-portal xdg-desktop-portal-gtk
+
+# Misc
+github-cli mtpaint 7zip man-db man-pages usbutils docker qt6-xcb-private-headers
+
+# AUR (manual makepkg -si)
+brave-bin rofi-git i3lock-color lazydocker xidlehook

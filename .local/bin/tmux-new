@@ -1,0 +1,3 @@
+#!/bin/bash
+session="kitty-$(date +%s%N)"
+exec tmux new-session -s "$session"

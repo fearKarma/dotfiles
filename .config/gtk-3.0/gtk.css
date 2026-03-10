@@ -1,0 +1,101 @@
+* {
+    background-color: #0d0d0d;
+    color: #ff69b4;
+    border-color: #1c1c1c;
+    outline: none;
+}
+
+window, dialog {
+    background-color: #0d0d0d;
+}
+
+headerbar {
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #1c1c1c;
+    box-shadow: none;
+}
+
+headerbar button {
+    background-color: #1c1c1c;
+    color: #ff69b4;
+    border: 1px solid #1c1c1c;
+    box-shadow: none;
+}
+
+button {
+    background-color: #1c1c1c;
+    color: #ff69b4;
+    border: 1px solid #1c1c1c;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+}
+
+button:hover {
+    background-color: #ff69b4;
+    color: #0d0d0d;
+    box-shadow: none;
+}
+
+button:active {
+    background-color: #ee4f84;
+    color: #0d0d0d;
+    box-shadow: none;
+}
+
+entry {
+    background-color: #1c1c1c;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+    box-shadow: none;
+}
+
+treeview {
+    background-color: #0d0d0d;
+    color: #ff69b4;
+}
+
+treeview:selected {
+    background-color: #ff69b4;
+    color: #0d0d0d;
+}
+
+menu, menubar {
+    background-color: #0d0d0d;
+    color: #ff69b4;
+}
+
+menuitem:hover {
+    background-color: #ff69b4;
+    color: #0d0d0d;
+}
+
+scrollbar {
+    background-color: #0d0d0d;
+}
+
+scrollbar slider {
+    background-color: #1c1c1c;
+}
+
+tooltip {
+    background-color: #1c1c1c;
+    color: #60cfe8;
+    border: none;
+}
+
+decoration {
+    box-shadow: none;
+    border: none;
+}
+
+filechooser {
+    background-color: #0d0d0d;
+}
+
+filechooser button {
+    background-color: #1c1c1c;
+    color: #ff69b4;
+    border: 1px solid #1c1c1c;
+    box-shadow: none;
+}

@@ -11,6 +11,9 @@
 
 set $mod Mod1
 
+
+#claude being a derp
+exec --no-startup-id systemctl --user import-environment DISPLAY XAUTHORITY' 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below
 title_align center
@@ -29,7 +32,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- /home/Pilgrim/.local/bin/i3lock-custom --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -243,3 +246,7 @@ client.background       #000000
 #         binding_mode        #f1ff52  #f1ff52  #1c1c1c
 #     }
 # }
+exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk
+exec --no-startup-id ~/.fehbg
+bindsym $mod+Shift+x exec /home/Pilgrim/.local/bin/i3lock-custom
+exec --no-startup-id xidlehook --not-when-fullscreen --timer 900 "/home/Pilgrim/.local/bin/i3lock-custom" ""

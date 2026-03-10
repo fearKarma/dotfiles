@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Yazi
+Exec=kitty --hold -e /home/Pilgrim/.local/bin/open-folder %u
+MimeType=inode/directory;
+Terminal=false

@@ -4,7 +4,7 @@
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "lualine.nvim": { "branch": "master", "commit": "47f91c416daef12db467145e16bed5bbfe00add8" },
   "nvim-cmp": { "branch": "main", "commit": "da88697d7f45d16852c6b2769dc52387d1ddc45f" },
-  "nvim-lspconfig": { "branch": "master", "commit": "2163c54bb6cfec53e3e555665ada945b8c8331b9" },
+  "nvim-lspconfig": { "branch": "master", "commit": "d8bf4c47385340ab2029402201d4d7c9f99f437a" },
   "nvim-tree.lua": { "branch": "master", "commit": "4b30847c91d498446cb8440c03031359b045e050" },
   "nvim-treesitter": { "branch": "main", "commit": "5cb05e1b0fa3c469958a2b26f36b3fe930af221c" },
   "nvim-ts-context-commentstring": { "branch": "main", "commit": "1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f" },

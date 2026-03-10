@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=ProjectRio
+Exec=/home/Pilgrim/ProjectRio/build/Binaries/dolphin-emu
+Icon=/home/Pilgrim/ProjectRio/Data/dolphin-emu.svg
+Categories=Game;

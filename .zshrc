@@ -43,6 +43,7 @@ alias eye3="v ~/.config/i3/config"
 alias work="cd ~/workspace/github.com/fearKarma"
 alias eu="cd ~/workspace/github.com/fearKarma/ProjectOiler"
 
+
 # MPV helper
 mpv1() {
   if [[ -d "$1" ]]; then
@@ -52,3 +53,9 @@ mpv1() {
   fi
 }
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Launch tmux
+if [ -z "$TMUX" ]; then
+  exec tmux new-session -s "$(date +%s)"
+fi
