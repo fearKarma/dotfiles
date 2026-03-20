@@ -1,5 +1,0 @@
-#!/bin/bash
-cd /home/Pilgrim/builds/keybr
-npm start &> /tmp/keybr.log &
-sleep 2
-brave "http://localhost:3000"

@@ -1,0 +1,53 @@
+#!/bin/bash
+screenshot=/tmp/i3lock-blur.png
+shotgun $screenshot
+convert $screenshot -blur 0x8 $screenshot
+i3lock \
+  -i $screenshot \
+  --color=000000ff \
+  --ring-color=ff69b4ff \
+  --ringver-color=60cfe8ff \
+  --ringwrong-color=ee4f84ff \
+  --keyhl-color=ff69b4ff \
+  --bshl-color=f1ff52ff \
+  --separator-color=1c1c1cff \
+  --insidever-color=00000066 \
+  --insidewrong-color=00000066 \
+  --inside-color=00000066 \
+  --verif-color=60cfe8ff \
+  --wrong-color=ee4f84ff \
+  --time-color=ff69b4ff \
+  --date-color=ff69b4ff \
+  --layout-color=ff69b4ff \
+  --time-size=192 \
+  --date-size=64 \
+  --clock \
+  --time-str="%H:%M" \
+  --date-str="%B %-d %Y" \
+  --time-pos="2040:420" \
+  --date-pos="2040:500" \
+  --ind-pos="2040:620" \
+  || i3lock \
+  --color=000000ff \
+  --ring-color=ff69b4ff \
+  --ringver-color=60cfe8ff \
+  --ringwrong-color=ee4f84ff \
+  --keyhl-color=ff69b4ff \
+  --bshl-color=f1ff52ff \
+  --separator-color=1c1c1cff \
+  --insidever-color=000000ff \
+  --insidewrong-color=000000ff \
+  --inside-color=000000ff \
+  --verif-color=60cfe8ff \
+  --wrong-color=ee4f84ff \
+  --time-color=ff69b4ff \
+  --date-color=ff69b4ff \
+  --layout-color=ff69b4ff \
+  --time-size=192 \
+  --date-size=64 \
+  --clock \
+  --time-str="%H:%M" \
+  --date-str="%B %-d %Y" \
+  --time-pos="2040:420" \
+  --date-pos="2040:500" \
+  --ind-pos="2040:620"
