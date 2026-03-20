@@ -9,7 +9,7 @@ autoload -Uz compinit
 compinit
 
 # Vi mode
-bindkey -v
+# bindkey -v
 
 # Exports
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -24,11 +24,12 @@ source /usr/share/fzf/completion.zsh
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Prompt
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+bindkey -e
 
 # Aliases
 alias cd="z"
@@ -59,3 +60,4 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 if [ -z "$TMUX" ]; then
   exec tmux new-session -s "$(date +%s)"
 fi
+alias clip='xclip -selection clipboard'
