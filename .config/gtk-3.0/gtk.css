@@ -16,3 +16,22 @@ tooltip { background-color: #1c1c1c; color: #60cfe8; border: none; }
 decoration { box-shadow: none; border: none; }
 filechooser { background-color: #0d0d0d; }
 filechooser button { background-color: #1c1c1c; color: #ff69b4; border: 1px solid #1c1c1c; box-shadow: none; }
+
+radio, notebook > header > tabs > arrow, modelbutton.flat,
+.menuitem.button.flat,
+button {
+    background-color: #1c1c1c;
+    color: #ff69b4;
+    border-color: #1c1c1c;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+}
+
+radio:active, notebook > header > tabs > arrow:active, modelbutton.flat:active,
+.menuitem.button.flat:active,
+button:active {
+    background-color: #ee4f84;
+    color: #0d0d0d;
+    box-shadow: none;
+}

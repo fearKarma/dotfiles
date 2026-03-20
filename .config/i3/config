@@ -250,3 +250,19 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk
 exec --no-startup-id ~/.fehbg
 bindsym $mod+Shift+x exec /home/Pilgrim/.local/bin/i3lock-custom
 exec --no-startup-id xidlehook --not-when-fullscreen --timer 900 "/home/Pilgrim/.local/bin/i3lock-custom" ""
+
+# Move window to workspace and follow (modal)
+mode "move" {
+    bindsym 1 move container to workspace number 1; workspace number 1; mode "default"
+    bindsym 2 move container to workspace number 2; workspace number 2; mode "default"
+    bindsym 3 move container to workspace number 3; workspace number 3; mode "default"
+    bindsym 4 move container to workspace number 4; workspace number 4; mode "default"
+    bindsym 5 move container to workspace number 5; workspace number 5; mode "default"
+    bindsym 6 move container to workspace number 6; workspace number 6; mode "default"
+    bindsym 7 move container to workspace number 7; workspace number 7; mode "default"
+    bindsym 8 move container to workspace number 8; workspace number 8; mode "default"
+    bindsym 9 move container to workspace number 9; workspace number 9; mode "default"
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+bindsym $mod+shift+grave mode "move"
