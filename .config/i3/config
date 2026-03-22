@@ -12,12 +12,12 @@
 set $mod Mod1
 
 
-#claude being a derp
+
 exec --no-startup-id systemctl --user import-environment DISPLAY XAUTHORITY' 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below
 title_align center
-font pango:Iosevka Nerd Font 12
+font pango:IosevkaTerm Nerd Font 18
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -202,7 +202,7 @@ exec  --no-startup-id kitty
 exec --no-startup-id brave
 exec_always --no-startup-id picom -b
 #exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id xrandr --output HDMI-1 --left-of DP-3 --rotate left
+#iexec --no-startup-id xrandr --output HDMI-1 --left-of DP-3 --rotate left
 
 # Remove borders
 default_border pixel 2
@@ -211,8 +211,8 @@ default_floating_border pixel 2
 for_window [class=".*"] border pixel 2
 
 # Add 1px gaps around windows
-gaps inner 16
-gaps outer 8
+gaps inner 8
+gaps outer 4
 
 
 # Focused

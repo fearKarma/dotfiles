@@ -9,7 +9,7 @@ entry { background-color: #1c1c1c; color: #ff69b4; border: 1px solid #ff69b4; bo
 treeview { background-color: #0d0d0d; color: #ff69b4; }
 treeview:selected { background-color: #ff69b4; color: #0d0d0d; }
 menu, menubar { background-color: #0d0d0d; color: #ff69b4; }
-menuitem:hover { background-color: #ff69b4; color: #0d0d0d; }
+menuitem:hover { background-color: #2a2a2a; color: #ff69b4; }
 scrollbar { background-color: #0d0d0d; }
 scrollbar slider { background-color: #1c1c1c; }
 tooltip { background-color: #1c1c1c; color: #60cfe8; border: none; }
@@ -35,3 +35,8 @@ button:active {
     color: #0d0d0d;
     box-shadow: none;
 }
+textview text selection { background-color: #ff69b4; color: #0d0d0d; }
+entry selection { background-color: #ff69b4; color: #0d0d0d; }
+menuitem:selected { background-color: #2a2a2a; color: #ff69b4; }
+menuitem:selected { background-color: #2a2a2a; color: #ff69b4; }
+selection { background-color: #ff69b4; color: #0d0d0d; }
